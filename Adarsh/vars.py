@@ -22,7 +22,7 @@ class Var(object):
     OWNER_ID = set(int(x) for x in os.environ.get("OWNER_ID", "5552521515").split())  
     NO_PORT = bool(getenv('NO_PORT', False))
     APP_NAME = None
-    OWNER_USERNAME = str(getenv('OWNER_USERNAME'))
+    OWNER_USERNAME = str(getenv('PRESIDENT7IND'))
     if 'DYNO' in environ:
         ON_HEROKU = True
         APP_NAME = str(getenv('APP_NAME'))
@@ -36,5 +36,5 @@ class Var(object):
     else:
         URL = "http://{}/".format(FQDN)
     DATABASE_URL = str(getenv('mongodb+srv://dasniru929:dasniru123@cluster0.51p5e.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'))
-    UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', None))
+    UPDATES_CHANNEL = str(getenv('-1001980205368'))
     BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "-1001362659779")).split())) 
